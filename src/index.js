@@ -3,11 +3,9 @@ import mongoose from 'mongoose'
 import express from 'express'
 import session from 'express-session'
 import connectRedis from 'connect-redis'
-import Redis from 'ioredis'
 import typeDefs from './typeDefs'
 import resolvers from './resolvers'
 import schemaDirectives from './directives'
-
 
 mongoose.connect('mongodb://localhost/mychatapp', {
   useNewUrlParser: true
